@@ -1,12 +1,62 @@
 package br.com.bpm.application.features.solicitation.commands;
 
-import java.util.UUID;
+import br.com.bpm.domain.features.solicitation.SolicitationApprovedEnum;
 
 public class SolicitationCommandUpdate {
 
-    public UUID id;
-    public String nameApplicant;
-    public String itemDescription;
-    public Double productValue;
+    private Long id;
+    private String nameApplicant;
+    private String itemDescription;
+    private Double productValue;
+    private SolicitationApprovedEnum isApproved;
 
+    private String observation;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNameApplicant() {
+        return nameApplicant;
+    }
+
+    public void setNameApplicant(String nameApplicant) {
+        this.nameApplicant = nameApplicant;
+    }
+
+    public String getItemDescription() {
+        return itemDescription;
+    }
+
+    public void setItemDescription(String itemDescription) {
+        this.itemDescription = itemDescription;
+    }
+
+    public Double getProductValue() {
+        return productValue;
+    }
+
+    public void setProductValue(Double productValue) {
+        this.productValue = productValue;
+    }
+
+    public SolicitationApprovedEnum getIsApproved() {
+        return isApproved;
+    }
+
+    public void setIsApproved(SolicitationApprovedEnum isApproved) {
+        this.isApproved = isApproved;
+    }
+
+    public String getObservation() {
+        return observation;
+    }
+
+    public void setObservation(String observation) {
+        this.observation = observation;
+    }
 }

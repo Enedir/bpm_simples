@@ -1,41 +1,55 @@
 package br.com.bpm.domain.features.solicitation;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import java.util.UUID;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
+@Table(name = "solicitations")
+@EntityListeners(AuditingEntityListener.class)
 public class Solicitation {
 
     @Id
-    @GeneratedValue
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", updatable = false, nullable = false)
+    private Long id;
+
+    @NotBlank
     private String nameApplicant;
+
+    @NotBlank
     private String itemDescription;
+
     private Double productValue;
 
-    public Solicitation() { }
+    private SolicitationApprovedEnum isApproved;
 
-    public Solicitation(UUID id, String nameApplicant, String itemDescription, Double productValue) {
-        this.id = id;
-        this.nameApplicant = nameApplicant;
-        this.itemDescription = itemDescription;
-        this.productValue = productValue;
+    private String observation;
+
+    public Solicitation() {
     }
 
     public Solicitation(String nameApplicant, String itemDescription, Double productValue) {
         this.nameApplicant = nameApplicant;
         this.itemDescription = itemDescription;
         this.productValue = productValue;
+        this.isApproved = SolicitationApprovedEnum.DEFAULT;
     }
 
-    public UUID getId() {
+    public Solicitation(String nameApplicant, String itemDescription, Double productValue, SolicitationApprovedEnum isApproved, String observation) {
+        this.nameApplicant = nameApplicant;
+        this.itemDescription = itemDescription;
+        this.productValue = productValue;
+        this.isApproved = isApproved;
+        this.observation = observation;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -61,6 +75,22 @@ public class Solicitation {
 
     public void setProductValue(Double productValue) {
         this.productValue = productValue;
+    }
+
+    public SolicitationApprovedEnum getIsApproved() {
+        return isApproved;
+    }
+
+    public void setIsApproved(SolicitationApprovedEnum isApproved) {
+        this.isApproved = isApproved;
+    }
+
+    public String getObservation() {
+        return observation;
+    }
+
+    public void setObservation(String observation) {
+        this.observation = observation;
     }
 }
 

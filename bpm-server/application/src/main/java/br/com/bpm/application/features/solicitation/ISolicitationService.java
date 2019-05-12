@@ -11,9 +11,9 @@ import java.util.UUID;
 
 public interface ISolicitationService {
 
-    UUID add(SolicitationCommandRegister command);
+    Long add(SolicitationCommandRegister command);
     Boolean update(SolicitationCommandUpdate command);
-    Solicitation get(UUID id) throws NotFoundException;
+    Solicitation get(Long id) throws NotFoundException;
     Iterable<Solicitation> get();
     Boolean delete(SolicitationCommandDelete command);
 }

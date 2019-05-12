@@ -5,29 +5,25 @@ import br.com.bpm.application.features.solicitation.commands.SolicitationCommand
 import br.com.bpm.application.features.solicitation.commands.SolicitationCommandUpdate;
 import br.com.bpm.domain.exception.NotFoundException;
 import br.com.bpm.domain.features.solicitation.Solicitation;
+import br.com.bpm.infrastructure.MapperUtils;
 import br.com.bpm.persistence.features.solicitation.SolicitationRepository;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
-import java.util.UUID;
 
 @Component
 public class SolicitationService implements ISolicitationService {
 
     private SolicitationRepository repository;
-    private ModelMapper mapper;
 
     public SolicitationService(SolicitationRepository repository) {
         this.repository = repository;
     }
 
     @Override
-    public UUID add(SolicitationCommandRegister command) {
+    public Long add(SolicitationCommandRegister command) {
 
-        mapper = new ModelMapper();
-
-        Solicitation entity = mapper.map(command, Solicitation.class);
+        Solicitation entity = MapperUtils.map(command, Solicitation.class);
         Solicitation newEntity = repository.save(entity);
 
         return newEntity.getId();
@@ -36,16 +32,14 @@ public class SolicitationService implements ISolicitationService {
     @Override
     public Boolean update(SolicitationCommandUpdate command) {
 
-        mapper = new ModelMapper();
-
-        Solicitation entity = mapper.map(command, Solicitation.class);
+        Solicitation entity = MapperUtils.map(command, Solicitation.class);
         Solicitation updatedEntity = repository.save(entity);
 
         return updatedEntity != null;
     }
 
     @Override
-    public Solicitation get(UUID id)throws NotFoundException{
+    public Solicitation get(Long id)throws NotFoundException{
 
         Optional<Solicitation> entity = repository.findById(id);
 
@@ -62,10 +56,10 @@ public class SolicitationService implements ISolicitationService {
     @Override
     public Boolean delete(SolicitationCommandDelete command) {
 
-        Optional<Solicitation> entity = repository.findById(command.id);
+        Optional<Solicitation> entity = repository.findById(command.getId());
 
         try {
-            entity.orElseThrow(() -> new NotFoundException(command.id));
+            entity.orElseThrow(() -> new NotFoundException(command.getId()));
             repository.delete(entity.get());
             return true;
 

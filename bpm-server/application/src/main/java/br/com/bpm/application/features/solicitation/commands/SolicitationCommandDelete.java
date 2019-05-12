@@ -1,11 +1,17 @@
 package br.com.bpm.application.features.solicitation.commands;
 
-import java.util.UUID;
-
 public class SolicitationCommandDelete {
 
-    public UUID id;
+    private Long id;
 
     public SolicitationCommandDelete() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
