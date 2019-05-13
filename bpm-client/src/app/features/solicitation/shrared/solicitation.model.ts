@@ -1,0 +1,34 @@
+export class Solicitation {
+
+    public id: number;
+    public nameApplicant: string;
+    public itemDescription: string;
+    public productValue: number;
+    public isApproved: string;
+    public observation?: string;
+}
+
+export class SolicitationCommandRegister {
+    
+    public nameApplicant: string;
+    public itemDescription: string;
+    public productValue: number;
+    public isApproved: string;
+   
+    constructor(){
+        this.isApproved = 'IN_WATERY'
+    }
+}
+
+export class SolicitationCommandUpdate {
+    
+    public id: number;
+    public nameApplicant: string;
+    public itemDescription: string;
+    public productValue: number;
+    public isApproved: string;
+   
+    constructor(){
+        this.isApproved = 'IN_WATERY'
+    }
+}

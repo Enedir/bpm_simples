@@ -2,22 +2,21 @@ package br.com.bpm.web.model;
 
 import br.com.bpm.domain.features.solicitation.SolicitationApprovedEnum;
 
-import java.util.UUID;
 
 public class SolicitationModelView {
 
-    private Long id;
+    private int id;
     private String nameApplicant;
     private String itemDescription;
-    private Double productValue;
+    private double productValue;
     private SolicitationApprovedEnum isApproved;
     private String observation;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -37,11 +36,11 @@ public class SolicitationModelView {
         this.itemDescription = itemDescription;
     }
 
-    public Double getProductValue() {
+    public double getProductValue() {
         return productValue;
     }
 
-    public void setProductValue(Double productValue) {
+    public void setProductValue(double productValue) {
         this.productValue = productValue;
     }
 

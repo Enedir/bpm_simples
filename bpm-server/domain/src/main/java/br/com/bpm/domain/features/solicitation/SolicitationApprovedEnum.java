@@ -2,7 +2,7 @@ package br.com.bpm.domain.features.solicitation;
 
 public enum SolicitationApprovedEnum {
 
-    DEFAULT,
+    IN_WATERY,
     APPROVED,
     REPROVED,
 

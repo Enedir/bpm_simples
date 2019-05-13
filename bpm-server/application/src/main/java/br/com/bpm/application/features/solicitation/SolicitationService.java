@@ -21,7 +21,7 @@ public class SolicitationService implements ISolicitationService {
     }
 
     @Override
-    public Long add(SolicitationCommandRegister command) {
+    public Integer add(SolicitationCommandRegister command) {
 
         Solicitation entity = MapperUtils.map(command, Solicitation.class);
         Solicitation newEntity = repository.save(entity);
@@ -39,7 +39,7 @@ public class SolicitationService implements ISolicitationService {
     }
 
     @Override
-    public Solicitation get(Long id)throws NotFoundException{
+    public Solicitation get(Integer id)throws NotFoundException{
 
         Optional<Solicitation> entity = repository.findById(id);
 

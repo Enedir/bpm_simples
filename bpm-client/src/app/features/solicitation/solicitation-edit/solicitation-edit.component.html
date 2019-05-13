@@ -1,0 +1,10 @@
+<section>
+
+    <bpm-solicitation-form [formModel]="formModel"></bpm-solicitation-form>
+  
+    <div>
+        <button  (click)="onEdit()"  [disabled]="formModel.invalid">Salvar</button>
+        <button  (click)="redirect()">Cancelar</button>
+    </div>
+  
+  </section>

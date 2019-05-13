@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class NotFoundException extends BusinessException {
 
-    public NotFoundException(Long id) {
+    public NotFoundException(Integer id) {
         super("Não foi possível encontrar o registro:" + id);
     }
 }

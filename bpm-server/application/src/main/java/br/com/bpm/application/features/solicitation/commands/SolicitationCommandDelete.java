@@ -2,16 +2,16 @@ package br.com.bpm.application.features.solicitation.commands;
 
 public class SolicitationCommandDelete {
 
-    private Long id;
+    private Integer id;
 
     public SolicitationCommandDelete() {
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 }

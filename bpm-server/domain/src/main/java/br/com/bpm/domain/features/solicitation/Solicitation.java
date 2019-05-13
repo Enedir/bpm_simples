@@ -12,8 +12,8 @@ public class Solicitation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", updatable = false, nullable = false)
-    private Long id;
+    @Column(name = "idSolicitation", updatable = false, nullable = false)
+    private int id;
 
     @NotBlank
     private String nameApplicant;
@@ -21,23 +21,25 @@ public class Solicitation {
     @NotBlank
     private String itemDescription;
 
-    private Double productValue;
+    private double productValue;
 
+    @Enumerated(EnumType.STRING)
     private SolicitationApprovedEnum isApproved;
 
     private String observation;
 
     public Solicitation() {
+        this.isApproved = SolicitationApprovedEnum.IN_WATERY;
     }
 
-    public Solicitation(String nameApplicant, String itemDescription, Double productValue) {
+    public Solicitation(String nameApplicant, String itemDescription, double productValue) {
         this.nameApplicant = nameApplicant;
         this.itemDescription = itemDescription;
         this.productValue = productValue;
-        this.isApproved = SolicitationApprovedEnum.DEFAULT;
+        this.isApproved = SolicitationApprovedEnum.IN_WATERY;
     }
 
-    public Solicitation(String nameApplicant, String itemDescription, Double productValue, SolicitationApprovedEnum isApproved, String observation) {
+    public Solicitation(String nameApplicant, String itemDescription, double productValue, SolicitationApprovedEnum isApproved, String observation) {
         this.nameApplicant = nameApplicant;
         this.itemDescription = itemDescription;
         this.productValue = productValue;
@@ -45,11 +47,11 @@ public class Solicitation {
         this.observation = observation;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -69,11 +71,11 @@ public class Solicitation {
         this.itemDescription = itemDescription;
     }
 
-    public Double getProductValue() {
+    public double getProductValue() {
         return productValue;
     }
 
-    public void setProductValue(Double productValue) {
+    public void setProductValue(double productValue) {
         this.productValue = productValue;
     }
 

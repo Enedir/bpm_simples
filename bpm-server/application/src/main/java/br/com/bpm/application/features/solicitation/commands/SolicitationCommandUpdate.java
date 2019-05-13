@@ -4,7 +4,7 @@ import br.com.bpm.domain.features.solicitation.SolicitationApprovedEnum;
 
 public class SolicitationCommandUpdate {
 
-    private Long id;
+    private Integer id;
     private String nameApplicant;
     private String itemDescription;
     private Double productValue;
@@ -12,11 +12,11 @@ public class SolicitationCommandUpdate {
 
     private String observation;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

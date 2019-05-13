@@ -14,6 +14,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -27,10 +28,10 @@ public class SolicitationController {
     }
 
     @PostMapping
-    public ResponseEntity<Long> add(@RequestBody SolicitationCommandRegister command) {
+    public ResponseEntity<Integer> add(@RequestBody SolicitationCommandRegister command) {
         try
         {
-            Long id =  service.add(command);
+            Integer id =  service.add(command);
             HttpHeaders responseHeaders = new HttpHeaders();
             return new ResponseEntity<>(id, responseHeaders, HttpStatus.OK);
         }catch (Exception ex)
@@ -54,13 +55,11 @@ public class SolicitationController {
     }
 
     @GetMapping("/getall")
-    public ResponseEntity<List<SolicitationModelView>> getAll() {
-
+    public  ResponseEntity<List<SolicitationModelView>> getAll() {
         try {
             List<Solicitation> entities = Lists.newArrayList(service.get());
-            List<SolicitationModelView> models = MapperUtils.mapAll(entities, SolicitationModelView.class);
             HttpHeaders responseHeaders = new HttpHeaders();
-            return new ResponseEntity<>(models, responseHeaders, HttpStatus.OK);
+            return new ResponseEntity<>(convertListToView(entities), responseHeaders, HttpStatus.OK);
         }catch (Exception ex){
             ex.printStackTrace();
             return ResponseEntity.badRequest().build();
@@ -68,13 +67,12 @@ public class SolicitationController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<SolicitationModelView> getById(@PathVariable(required = true) Long id) {
+    public ResponseEntity<SolicitationModelView> getById(@PathVariable(required = true) Integer id) {
 
         try {
             Solicitation entity =  service.get(id);
-            SolicitationModelView model = MapperUtils.map(entity,SolicitationModelView.class);
             HttpHeaders responseHeaders = new HttpHeaders();
-            return new ResponseEntity<>(model, responseHeaders, HttpStatus.OK);
+            return new ResponseEntity<>(MapperUtils.map(entity,SolicitationModelView.class), responseHeaders, HttpStatus.OK);
         }catch (NotFoundException ex)
         {
             ex.printStackTrace();
@@ -93,5 +91,16 @@ public class SolicitationController {
             ex.printStackTrace();
             return ResponseEntity.badRequest().build();
         }
+    }
+    
+    private  List<SolicitationModelView> convertListToView( List<Solicitation> entities){
+
+        List<SolicitationModelView> modelList = new ArrayList<>();
+
+        for (Solicitation entity: entities) {
+            modelList.add(MapperUtils.map(entity,SolicitationModelView.class));
+        }
+
+        return modelList;
     }
 }
