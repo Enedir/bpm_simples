@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs/internal/Observable";
+
+import { Observable, of, EMPTY } from 'rxjs';
+import { mergeMap, catchError} from 'rxjs/operators'
 
 import { environment } from './../../../../environments/environment';
 import { Solicitation, SolicitationCommandRegister, SolicitationCommandUpdate } from './solicitation.model';
-import { Resolve, Router, ActivatedRoute, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';
-import { take, catchError, mergeMap } from 'rxjs/operators';
-import { EMPTY, of } from 'rxjs';
+import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+
 
 @Injectable({
     providedIn: 'root'
@@ -38,21 +39,27 @@ export class SolicitationService {
     }
 }
 
+@Injectable({
+    providedIn: 'root'
+})
 @Injectable()
-export class SolicitationResolveService implements Resolve<any> {
+export class SolicitationResolveService implements Resolve<Solicitation> {
 
     constructor(private service: SolicitationService) { }
 
-    resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> | Observable<never> {
-        return this.service.get(route.params['SolicitationId']).pipe(catchError(error => {
+    resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):  Observable<Solicitation> | Observable<never>{
+
+        const solicitationId = Number(route.params['SolicitationId']);
+
+         return this.service.get(solicitationId).pipe(catchError(error   => {
             return EMPTY
-        }), mergeMap(something => {
-            if (something) {
-                return of(something)
-            } else {
-                return EMPTY;
-            }
-        })
-        )
+         }), mergeMap(solicitation => {
+               if (solicitation) {
+                  return of(solicitation)
+               } else {
+                  return EMPTY;
+               }
+             })
+           )
     }
 }

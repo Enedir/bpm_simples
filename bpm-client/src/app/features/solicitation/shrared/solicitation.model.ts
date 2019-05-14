@@ -28,7 +28,8 @@ export class SolicitationCommandUpdate {
     public productValue: number;
     public isApproved: string;
    
-    constructor(){
+    constructor(id?: number){
+        this.id = id;
         this.isApproved = 'IN_WATERY'
     }
 }

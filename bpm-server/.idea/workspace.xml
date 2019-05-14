@@ -2,45 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb63a5c8-8ff1-4a61-ad6f-5216853d86b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../bpm-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/shared/shared.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/ISolicitationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/ISolicitationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/SolicitationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/SolicitationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/ISolicitationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/ISolicitationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/SolicitationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/SolicitationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/commands/SolicitationCommandDelete.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/commands/SolicitationCommandDelete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/commands/SolicitationCommandUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/commands/SolicitationCommandUpdate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bpm-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bpm-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/domain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/br/com/bpm/domain/exception/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/br/com/bpm/domain/exception/NotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/br/com/bpm/domain/features/solicitation/Solicitation.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/br/com/bpm/domain/features/solicitation/Solicitation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/infrastructure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/infrastructure.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/persistence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/persistence.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/features/solicitation/SolicitationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/features/solicitation/SolicitationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/target/classes/br/com/bpm/persistence/DbSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/target/classes/br/com/bpm/persistence/DbSeeder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/target/classes/br/com/bpm/persistence/features/solicitation/SolicitationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/target/classes/br/com/bpm/persistence/features/solicitation/SolicitationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/BmpServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/BmpServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/model/SolicitationModelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/model/SolicitationModelView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/br/com/bpm/web/BmpServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/br/com/bpm/web/BmpServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/br/com/bpm/web/controllers/SolicitationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/br/com/bpm/web/controllers/SolicitationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/br/com/bpm/web/model/SolicitationModelView.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/br/com/bpm/web/model/SolicitationModelView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/CORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/CORSFilter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,12 +24,24 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="113">
+              <caret line="47" selection-start-line="47" selection-end-line="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/CORSFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +81,6 @@
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/IMovimentService.java" />
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/queries/SolicitationQuery.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/GreetingController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/CORSFilter.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/ServletInitializer.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/AliveController.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/application.properties" />
@@ -137,6 +113,7 @@
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/CORSFilter.java" />
       </list>
     </option>
   </component>
@@ -148,10 +125,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1418" />
-    <option name="y" value="-18" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1636" />
+    <option name="y" value="-13" />
+    <option name="width" value="1364" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -250,6 +227,15 @@
               <item name="br.com.bpm.domain" type="1f31426a:PackageElementNode" />
               <item name="features.solicitation" type="1f31426a:PackageElementNode" />
             </path>
+            <path>
+              <item name="bpm-server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="web" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="bpm-server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="web" type="616d4139:PackageViewModuleNode" />
+              <item name="br.com.bpm.web" type="1f31426a:PackageElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -316,11 +302,12 @@
       <workItem from="1557530113374" duration="14894000" />
       <workItem from="1557583286775" duration="24086000" />
       <workItem from="1557683708641" duration="19743000" />
+      <workItem from="1557786681727" duration="2126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58723000" />
+    <option name="totallyTimeSpent" value="60849000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,9 +319,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="32" width="1936" height="1056" extended-state="6" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -344,13 +332,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45720476" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30227518" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32733223" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
@@ -371,6 +359,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/domain/pom.xml">
@@ -541,16 +541,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/ModeMapperConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/ModeMapperConfig.java" />
     <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/model/SolicitationModelView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -562,16 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/CORSFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -667,8 +648,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="113">
+          <caret line="47" selection-start-line="47" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/CORSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

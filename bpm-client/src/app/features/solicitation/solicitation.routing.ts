@@ -16,35 +16,20 @@ const solicitationRoutes: Routes = [
     {
         path: 'create',
         component: SolicitationCreatorComponent,
-        data: {
-            breadcrumbOptions: {
-                breadcrumbLabel: 'Criar Solicitação',
-            },
-        },
     },
     {
         path: 'edit/:SolicitationId',
-        component: SolicitationCreatorComponent,
+        component: SolicitationEditComponent,
         resolve: {
-            key: SolicitationResolveService,
-        },
-        data: {
-            breadcrumbOptions: {
-                breadcrumbLabel: 'Atualizar Solicitação',
-            },
-        },
+            solicitation: SolicitationResolveService,
+        }
     },
     {
         path: 'approved/:SolicitationId',
-        component: SolicitationCreatorComponent,
+        component: SolicitationApproveComponent,
         resolve: {
-            key: SolicitationResolveService,
-        },
-        data: {
-            breadcrumbOptions: {
-                breadcrumbLabel: 'Aprovar Solicitação',
-            },
-        },
+            solicitation: SolicitationResolveService,
+        }
     },
 ]
 
