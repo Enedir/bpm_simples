@@ -94,5 +94,11 @@ public class Solicitation {
     public void setObservation(String observation) {
         this.observation = observation;
     }
+
+    public void approveValidate() throws SocilitationApproveException {
+
+        if(isApproved == SolicitationApprovedEnum.REPROVED && observation.isEmpty())
+            throw new SocilitationApproveException();
+    }
 }
 

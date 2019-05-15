@@ -1,13 +1,23 @@
 <section>
 
   <div>
-    <p>Ira existir um filtro aqui um dia</p>
+
+    <select id="filter" [(ngModel)]="currentiFlter">
+      <option *ngFor="let filter of filters" [value]="filter">{{ filter.name }}</option>
+    </select>
+
+    <div *ngIf="currentiFlter.hasText">
+      <input type="text"  [(ngModel)]="currentiFlter.value">
+    </div>
+
+    <button (click)="onFilter()">Filtrar</button>
+    <button (click)="onClear()">Limpar</button>
+
   </div>
-  
+
   <div>
     <button type="button" (click)="onCrete()">Solicitar</button>
     <button type="button" (click)="onApprove()">Aprovar</button>
-    <button type="button" (click)="onCancel()">Cancelar</button>
     <button type="button" (click)="onDelete()">Deletar</button>
   </div>
 
@@ -18,7 +28,7 @@
           {{header}}
         </th>
       </tr>
-      <tr *ngFor="let solicitation of solicitations" (click)="onClickRow(solicitation)">
+      <tr *ngFor="let solicitation of solicitations" (click)="onSelect(solicitation)">
         <td *ngFor="let col of columns">
           {{solicitation[col]}}
         </td>

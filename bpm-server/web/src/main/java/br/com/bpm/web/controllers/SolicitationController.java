@@ -1,7 +1,7 @@
 package br.com.bpm.web.controllers;
 
 import br.com.bpm.application.features.solicitation.ISolicitationService;
-import br.com.bpm.application.features.solicitation.commands.SolicitationCommandDelete;
+import br.com.bpm.application.features.solicitation.commands.SolicitationCommandApprove;
 import br.com.bpm.application.features.solicitation.commands.SolicitationCommandRegister;
 import br.com.bpm.application.features.solicitation.commands.SolicitationCommandUpdate;
 import br.com.bpm.domain.exception.NotFoundException;
@@ -28,7 +28,7 @@ public class SolicitationController {
     }
 
     @PostMapping
-    public ResponseEntity<Integer> add(@RequestBody SolicitationCommandRegister command) {
+    public ResponseEntity<Integer> post(@RequestBody SolicitationCommandRegister command) {
         try
         {
             Integer id =  service.add(command);
@@ -42,10 +42,23 @@ public class SolicitationController {
     }
 
     @PutMapping
-    public ResponseEntity<Boolean> update(@RequestBody SolicitationCommandUpdate command) {
+    public ResponseEntity<Boolean> put(@RequestBody SolicitationCommandUpdate command) {
         try
         {
             service.update(command);
+            return  ResponseEntity.ok().build();
+        }catch (Exception ex)
+        {
+            ex.printStackTrace();
+            return ResponseEntity.badRequest().build();
+        }
+    }
+
+    @PatchMapping
+    public ResponseEntity<Boolean> patch(@RequestBody SolicitationCommandApprove command) {
+        try
+        {
+            service.approve(command);
             return  ResponseEntity.ok().build();
         }catch (Exception ex)
         {
@@ -67,7 +80,7 @@ public class SolicitationController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<SolicitationModelView> getById(@PathVariable(required = true) Integer id) {
+    public ResponseEntity<SolicitationModelView> get(@PathVariable(required = true) Integer id) {
 
         try {
             Solicitation entity =  service.get(id);
@@ -79,11 +92,11 @@ public class SolicitationController {
             return ResponseEntity.badRequest().build();
         }
     }
-    @DeleteMapping
-    public ResponseEntity<Boolean> delete(@RequestBody SolicitationCommandDelete command) {
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Boolean> delete(@PathVariable Integer id) {
 
         try{
-            service.delete(command);
+            service.delete(id);
             return ResponseEntity.ok().build();
 
         }catch (Exception ex)

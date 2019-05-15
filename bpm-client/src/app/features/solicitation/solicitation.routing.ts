@@ -25,7 +25,7 @@ const solicitationRoutes: Routes = [
         }
     },
     {
-        path: 'approved/:SolicitationId',
+        path: 'approve/:SolicitationId',
         component: SolicitationApproveComponent,
         resolve: {
             solicitation: SolicitationResolveService,

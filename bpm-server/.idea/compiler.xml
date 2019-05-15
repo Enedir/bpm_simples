@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="web" />
+        <module name="distributed service" />
         <module name="domain" />
-        <module name="persistence" />
+        <module name="orm" />
         <module name="infrastructure" />
         <module name="application" />
       </profile>
@@ -16,20 +16,20 @@
     <bytecodeTargetLevel>
       <module name="application" target="1.8" />
       <module name="bpm-server" target="1.8" />
+      <module name="distributed service" target="1.8" />
       <module name="domain" target="1.8" />
       <module name="infrastructure" target="1.8" />
-      <module name="persistence" target="1.8" />
-      <module name="web" target="1.8" />
+      <module name="orm" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="application" options="-parameters" />
       <module name="bpm-server" options="-parameters" />
+      <module name="distributed service" options="-parameters" />
       <module name="domain" options="-parameters" />
       <module name="infrastructure" options="-parameters" />
-      <module name="persistence" options="-parameters" />
-      <module name="web" options="-parameters" />
+      <module name="orm" options="-parameters" />
     </option>
   </component>
 </project>

@@ -11,6 +11,7 @@ import { SolicitationFormComponent } from './solicitation-form/solicitation-form
 import { SolicitationCreatorComponent } from './solicitation-creator/solicitation-creator.component';
 import { SolicitationEditComponent } from './solicitation-edit/solicitation-edit.component';
 import { SolicitationApproveComponent } from './solicitation-approve/solicitation-approve.component';
+import { SolicitationApproveFormComponent } from './solicitation-approve-form/solicitation-approve-form.component';
 
 @NgModule({
     imports: [
@@ -26,6 +27,8 @@ import { SolicitationApproveComponent } from './solicitation-approve/solicitatio
         SolicitationCreatorComponent,
         SolicitationEditComponent,
         SolicitationApproveComponent,
+        SolicitationApproveFormComponent
+        ,
     ],
     providers: [
         SolicitationService,

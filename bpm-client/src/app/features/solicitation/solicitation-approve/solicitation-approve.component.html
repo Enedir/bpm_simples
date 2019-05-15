@@ -1,3 +1,14 @@
-<p>
-  solicitation-approve works!
-</p>
+<section>
+
+  <bpm-solicitation-approve-form 
+      [formModel]="formModel" 
+      [solicitation]="solicitation" 
+      [itens]="itens">
+  </bpm-solicitation-approve-form>
+
+  <div>
+      <button  (click)="onApprove()"  [disabled]="formModel.invalid">Salvar</button>
+      <button  (click)="redirect()">Cancelar</button>
+  </div>
+
+</section>

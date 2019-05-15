@@ -1,6 +1,6 @@
 package br.com.bpm.application.features.solicitation;
 
-import br.com.bpm.application.features.solicitation.commands.SolicitationCommandDelete;
+import br.com.bpm.application.features.solicitation.commands.SolicitationCommandApprove;
 import br.com.bpm.application.features.solicitation.commands.SolicitationCommandRegister;
 import br.com.bpm.application.features.solicitation.commands.SolicitationCommandUpdate;
 import br.com.bpm.domain.exception.NotFoundException;
@@ -38,6 +38,27 @@ public class SolicitationService implements ISolicitationService {
         return updatedEntity != null;
     }
 
+
+    @Override
+    public Boolean approve(SolicitationCommandApprove command) {
+
+        try {
+            Optional<Solicitation> entity = repository.findById(command.getId());
+
+            entity.get().setIsApproved(command.getIsApproved());
+            entity.get().setObservation(command.getObservation());
+
+            entity.get().approveValidate();
+
+            repository.save(entity.get());
+
+            return true;
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+        return false;
+    }
+
     @Override
     public Solicitation get(Integer id)throws NotFoundException{
 
@@ -54,16 +75,13 @@ public class SolicitationService implements ISolicitationService {
 
 
     @Override
-    public Boolean delete(SolicitationCommandDelete command) {
-
-        Optional<Solicitation> entity = repository.findById(command.getId());
+    public Boolean delete(Integer id) {
 
         try {
-            entity.orElseThrow(() -> new NotFoundException(command.getId()));
-            repository.delete(entity.get());
-            return true;
+            repository.deleteById(id);
 
-        } catch (NotFoundException e) {
+            return true;
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
