@@ -2,33 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb63a5c8-8ff1-4a61-ad6f-5216853d86b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandApprove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SocilitationApproveException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.routing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.validator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve-form/solicitation-approve-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve-form/solicitation-approve-form.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve-form/solicitation-approve-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve-form/solicitation-approve-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.routing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/shared/shared.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/styles.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/src/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-client/tslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/ISolicitationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/ISolicitationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/SolicitationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/SolicitationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandDelete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/ISolicitationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/ISolicitationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/SolicitationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/br/com/bpm/application/features/solicitation/SolicitationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/target/classes/br/com/bpm/domain/features/solicitation/Solicitation.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/br/com/bpm/domain/features/solicitation/Solicitation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/persistence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/orm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/br/com/bpm/web/controllers/SolicitationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/br/com/bpm/web/controllers/SolicitationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/distributed service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,44 +85,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/ISolicitationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/SolicitationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1264">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="87" column="125" lean-forward="true" selection-start-line="87" selection-start-column="125" selection-end-line="87" selection-end-column="125" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,7 +119,6 @@
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/GreetingController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/ServletInitializer.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/AliveController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/web/pom.xml" />
         <option value="$PROJECT_DIR$/application/pom.xml" />
         <option value="$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/features/moviment/MovimentRepository.java" />
@@ -151,6 +151,7 @@
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/ISolicitationService.java" />
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/SolicitationService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -162,10 +163,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1742" />
-    <option name="y" value="-22" />
-    <option name="width" value="1364" />
-    <option name="height" value="735" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -175,29 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bpm-server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="distributed service" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="bpm-server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="distributed service" type="616d4139:PackageViewModuleNode" />
-              <item name="br.com.bpm.web" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bpm-server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="distributed service" type="616d4139:PackageViewModuleNode" />
-              <item name="br.com.bpm.web" type="1f31426a:PackageElementNode" />
-              <item name="controllers" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,6 +187,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,11 +253,13 @@
       <workItem from="1557786681727" duration="2126000" />
       <workItem from="1557803824469" duration="3368000" />
       <workItem from="1557872370216" duration="7200000" />
+      <workItem from="1557962843125" duration="2172000" />
+      <workItem from="1558063064693" duration="1865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71417000" />
+    <option name="totallyTimeSpent" value="75454000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,10 +271,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="32" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12633263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -302,7 +283,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19934994" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.815818" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,13 +371,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-jpa/2.1.6.RELEASE/spring-data-jpa-2.1.6.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.6.RELEASE/spring-data-jpa-2.1.6.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class" />
     <entry file="file://$PROJECT_DIR$/infrastructure/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -433,23 +408,10 @@
     <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/moviment/IMovimentService.java" />
     <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/moviment/MovimentService.java" />
     <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/model/MovimentModelView.java" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/MovimentController.java" />
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/moviment/Moviment.java" />
     <entry file="file://$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/features/moviment/MovimentRepository.java" />
-    <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandDelete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandDelete.java" />
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/exception/NotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -592,20 +554,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class" />
     <entry file="file://$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -623,27 +573,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/ISolicitationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-commons/2.1.6.RELEASE/spring-data-commons-2.1.6.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.6.RELEASE/spring-data-commons-2.1.6.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class" />
     <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/SolicitationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1264">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="1139">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -652,11 +586,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="87" column="125" lean-forward="true" selection-start-line="87" selection-start-column="125" selection-end-line="87" selection-end-column="125" />
+        <state relative-caret-position="1292">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/ISolicitationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
