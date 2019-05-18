@@ -2,71 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb63a5c8-8ff1-4a61-ad6f-5216853d86b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../bpm-client/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/app.routing.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/shrared/solicitation.validator.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve-form/solicitation-approve-form.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve-form/solicitation-approve-form.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve-form/solicitation-approve-form.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve-form/solicitation-approve-form.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-edit/solicitation-edit.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-form/solicitation-form.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation-list/solicitation-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/features/solicitation/solicitation.routing.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/app/shared/shared.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/styles.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bpm-client/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-cli/src/app/core/grid/grid.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-cli/src/app/core/grid/grid.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-cli/src/app/core/grid/shared/row-label.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-cli/src/app/core/grid/shared/row-label.directive.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -163,10 +100,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -254,12 +191,12 @@
       <workItem from="1557803824469" duration="3368000" />
       <workItem from="1557872370216" duration="7200000" />
       <workItem from="1557962843125" duration="2172000" />
-      <workItem from="1558063064693" duration="1865000" />
+      <workItem from="1558063064693" duration="3660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75454000" />
+    <option name="totallyTimeSpent" value="77249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,9 +208,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12633263" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17927383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -283,7 +220,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.815818" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.95090014" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

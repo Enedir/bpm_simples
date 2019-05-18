@@ -1,1 +1,9 @@
-<bpm-grid [options]="gridOptions" [dataReader]="data"></bpm-grid>
+<section class="container">
+  <div class="container__button">
+    <button class="button button__solicitation" type="button" (click)="onCrete()">Solicitar</button>
+    <button class="button button__approve" type="button" (click)="onApprove()">Aprovar</button>
+    <button class="button button__delete" type="button" (click)="onDelete()">Deletar</button>
+  </div>
+
+  <bpm-grid [options]="gridOptions" [dataReader]="data" (selectEvent)="onItemSelect($event)"></bpm-grid>
+</section>

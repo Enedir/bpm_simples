@@ -24,7 +24,7 @@ h2 {
     margin-bottom: 25px;
   }
   .table-header {
-    background-color: #95A5A6;
+    background-color: #92bde7;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -47,7 +47,7 @@ h2 {
   }
 
 
-  @media all and (max-width: 767px) {
+  @media all and (max-width: 768px) {
     .table-header {
       display: none;
     }

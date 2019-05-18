@@ -8,6 +8,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { SolicitationRoutingModule } from './solicitation.routing';
 import { SolicitationService, SolicitationResolveService } from './shared/solicitation.service';
 import { SolicitationListComponent } from './solicitation-list/solicitation-list.component';
+import { SolicitationApproveComponent } from './solicitation-approve/solicitation-approve.component';
+import { SolicitationCreatorComponent } from './solicitation-creator/solicitation-creator.component';
 
 @NgModule({
   imports: [
@@ -17,7 +19,7 @@ import { SolicitationListComponent } from './solicitation-list/solicitation-list
     HttpClientModule,
     SolicitationRoutingModule,
   ],
-  declarations: [SolicitationListComponent],
+  declarations: [SolicitationListComponent, SolicitationApproveComponent, SolicitationCreatorComponent],
   providers: [
     SolicitationService,
     SolicitationResolveService,

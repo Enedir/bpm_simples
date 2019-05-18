@@ -1,14 +1,18 @@
-import { Directive, ElementRef, Renderer, Input } from '@angular/core';
+import { GridOption } from './grid.model';
+import { Directive, ElementRef, Renderer, Input, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[bpmRowLabel]'
 })
-export class RowLabelDirective {
+export class RowLabelDirective implements OnInit {
 
   constructor(private _elemRef: ElementRef, private _renderer: Renderer) {
-     this._renderer.setElementAttribute(this._elemRef.nativeElement, 'data-label', this.labelText);
   }
 
 // tslint:disable-next-line: no-input-rename
-  @Input('bpmRowLabelText') labelText: string;
+  @Input('bpmRowOption') params: GridOption;
+
+  ngOnInit(): void {
+    this._renderer.setElementAttribute(this._elemRef.nativeElement, 'data-label', this.params.header);
+  }
 }

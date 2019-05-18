@@ -9,25 +9,31 @@ import { SolicitationService } from '../shared/solicitation.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
-  selector: 'bpm-solicitation-list',
   templateUrl: './solicitation-list.component.html',
   styleUrls: ['./solicitation-list.component.scss']
 })
 export class SolicitationListComponent implements OnInit {
 
+  constructor(private router: Router, private route: ActivatedRoute, private service: SolicitationService) {}
+
   gridOptions: GridOption[];
   data: Solicitation[];
 
-  private solicitation: Solicitation;
-
-  constructor(private router: Router, private route: ActivatedRoute, private service: SolicitationService) {}
+  private solicitationSelected: Solicitation;
 
   ngOnInit() {
     this.setGridOption();
     this.refresh();
   }
 
+  public onItemSelect(selected: Solicitation) {
+    this.solicitationSelected = selected;
+  }
+
   private setGridOption(): void {
+
+    const country = 'INR';
+
     this.gridOptions = [
       {
         header: 'Solicitante',
@@ -42,7 +48,8 @@ export class SolicitationListComponent implements OnInit {
       {
         header: 'Valor do Produção',
         field: 'productValue',
-        pipe: ''
+        //pipe: ' | currency: \'BRL\':true:\'1.2-2\''
+        pipe:  ''
       },
       {
         header: 'Situação',
@@ -70,5 +77,44 @@ export class SolicitationListComponent implements OnInit {
           // Log errors if any
         }
       });
+  }
+
+  private onCrete(): void {
+    this.router.navigate(['create'], { relativeTo: this.route });
+  }
+
+  private onApprove(): void {
+
+    if (this.solicitationSelected != null) {
+      this.router.navigate(['./approve', `${this.solicitationSelected.id}`], { relativeTo: this.route });
+    }
+    else {
+      alert("Selecione uma solicitação para poder aprová la.");
+    }
+  }
+
+  private onDelete(): void {
+
+    if (this.solicitationSelected != null) {
+      this.service.delete(this.solicitationSelected.id)
+        .pipe(take(1))
+        .subscribe((response) => {
+          this.refresh();
+        }, (err: HttpErrorResponse) => {
+          if (err.error instanceof Error) {
+            // A client-side or network error occurred.
+            console.log('An error occurred:', err.error.message);
+          } else {
+            // Backend returns unsuccessful response codes such as 404, 500 etc.
+            console.log('Backend returned status code: ', err.status);
+            console.log('Response body:', err.error);
+            // Log errors if any
+          }
+        });
+    }
+    else {
+      alert("Selecione uma solicitação para poder deletar.");
+    }
+
   }
 }

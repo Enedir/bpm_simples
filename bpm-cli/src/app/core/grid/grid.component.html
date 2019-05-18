@@ -6,8 +6,8 @@
       </div>
     </li>
     <li class="table-row" *ngFor="let data of dataReader" (click)="onSelect(data)">
-      <div class="col col-{{i + 1}}" *ngFor="let option of options; let i = index" bpmRowLabel [bpmRowLabelText]="'o'">
-        {{ data[option.field] }}
+      <div class="col col-{{i + 1}}" *ngFor="let option of options; let i = index" bpmRowLabel [bpmRowOption]="option">
+        {{ data[option.field] + option.pipe}}
       </div>
     </li>
   </ul>

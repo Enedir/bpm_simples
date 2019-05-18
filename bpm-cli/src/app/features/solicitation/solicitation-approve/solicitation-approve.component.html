@@ -1,0 +1,39 @@
+<section class="container">
+  <h1 class="brand">Avaliação de Solicitação</h1>
+  <div class="wrapper">
+    <div class="solicitation-info">
+      <h3>Solicitação</h3>
+      <ul>
+        <li><strong>Nome do Solicitante</strong></li>
+        <li> {{solicitation.nameApplicant}}</li>
+        <li><strong>Descrição do Item</strong></li>
+        <li> {{solicitation.itemDescription}}</li>
+        <li><strong>Valor do Produto</strong></li>
+        <li> {{solicitation.productValue}}</li>
+      </ul>
+    </div>
+    <div class="solicitation">
+      <form [formGroup]="formModel">
+        <p>
+          <label for="productValue">Situação da Solicitação</label>
+          <select id="isApproved" formControlName="isApproved">
+            <option *ngFor="let item of itens" [ngValue]="item.value">{{ item.name }}</option>
+          </select>
+          <small *ngIf="formModel.get('isApproved').touched">
+            <small *ngIf="formModel.get('isApproved').touched">Campo obrigatório.</small>
+          </small>
+        </p>
+        <p>
+          <label for="observation">Observações:</label>
+          <textarea formControlName="observation" id="observation" rows="5"></textarea>
+          <small *ngIf="formModel.get('observation').touched">
+            <small *ngIf="formModel.errors?.observationEmpty">Campo obrigatório, quando a situação da solicitação é
+              reprovada.</small>
+          </small>
+        </p>
+        <button (click)="onApprove()" [disabled]="formModel.invalid">Salvar</button>
+        <button (click)="redirect()">Cancelar</button>
+      </form>
+    </div>
+  </div>
+</section>

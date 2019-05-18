@@ -1,0 +1,35 @@
+.container {
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+
+  &__button{
+    width: 76%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  &__solicitation{
+    background-color: #4CAF50; /* Green */
+  }
+
+  &__approve{
+    background-color: #008CBA; /* Blue  */
+  }
+
+  &__delete{
+    background-color: #f44336; /* Red */
+  }
+}
