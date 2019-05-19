@@ -1,4 +1,7 @@
 <section class="container">
+  <div>
+    <bpm-filter  [options]="filterOptions" [dataReader]="data" (filterSearchEvent)="onFilterSearch($event)" (filterClearEvent)="onFilterClear()"></bpm-filter>
+  </div>
   <div class="container__button">
     <button class="button button__solicitation" type="button" (click)="onCrete()">Solicitar</button>
     <button class="button button__approve" type="button" (click)="onApprove()">Aprovar</button>

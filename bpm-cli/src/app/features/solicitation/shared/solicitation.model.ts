@@ -1,47 +1,41 @@
 export class Solicitation {
-
-    public id: number;
-    public nameApplicant: string;
-    public itemDescription: string;
-    public productValue: number;
-    public isApproved: string;
-    public observation?: string;
+  public id: number;
+  public nameApplicant: string;
+  public itemDescription: string;
+  public productValue: number;
+  public isApproved: string;
+  public observation?: string;
 }
 
 export class SolicitationCommandRegister {
+  constructor() {
+    this.isApproved = 'IN_WATERY';
+  }
 
-    public nameApplicant: string;
-    public itemDescription: string;
-    public productValue: number;
-    public isApproved: string;
-
-    constructor() {
-        this.isApproved = 'IN_WATERY'
-    }
+  public nameApplicant: string;
+  public itemDescription: string;
+  public productValue: number;
+  public isApproved: string;
 }
 
 export class SolicitationCommandUpdate {
+  constructor(id?: number) {
+    this.id = id;
+    this.isApproved = 'IN_WATERY';
+  }
 
-    public id: number;
-    public nameApplicant: string;
-    public itemDescription: string;
-    public productValue: number;
-    public isApproved: string;
-
-    constructor(id?: number) {
-        this.id = id;
-        this.isApproved = 'IN_WATERY'
-    }
-
+  public id: number;
+  public nameApplicant: string;
+  public itemDescription: string;
+  public productValue: number;
+  public isApproved: string;
 }
 
 export class SolicitationCommandApprove {
-
-    public id: number;
-    public isApproved: string;
-    public observation?: string;
-
-    constructor(id?: number) {
-        this.id = id;
-    }
+  constructor(id?: number) {
+    this.id = id;
+  }
+  public id: number;
+  public isApproved: string;
+  public observation?: string;
 }

@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { take } from 'rxjs/operators';
 
-import { GridOption } from './../../../core/grid/shared/grid.model';
+import { IGridOption } from './../../../core/grid/shared/grid.model';
+import { FilterOption } from './../../../core/filter/shared/filter.model';
 
 import { Solicitation } from '../shared/solicitation.model';
 import { SolicitationService } from '../shared/solicitation.service';
@@ -16,7 +17,8 @@ export class SolicitationListComponent implements OnInit {
 
   constructor(private router: Router, private route: ActivatedRoute, private service: SolicitationService) {}
 
-  gridOptions: GridOption[];
+  gridOptions: IGridOption[];
+  filterOptions: FilterOption[];
   data: Solicitation[];
 
   private solicitationSelected: Solicitation;
@@ -57,6 +59,33 @@ export class SolicitationListComponent implements OnInit {
         pipe: ''
       },
 
+    ];
+
+    this.filterOptions = [
+      {
+        text: 'Aprovados',
+        key: 'isApproved',
+        value: 'APPROVED',
+        hasValue: true,
+      },
+      {
+        text: 'Reprovados',
+        key: 'isApproved',
+        value: 'REPROVED',
+        hasValue: true,
+      },
+      {
+        text: 'Nome do solicitante',
+        key: 'nameApplicant',
+        value: '',
+        hasValue: false,
+      },
+      {
+        text: 'Descrição do item',
+        key: 'itemDescription',
+        value: '',
+        hasValue: false,
+      },
     ];
   }
 
@@ -116,5 +145,13 @@ export class SolicitationListComponent implements OnInit {
       alert("Selecione uma solicitação para poder deletar.");
     }
 
+  }
+
+  private onFilterSearch(data: Solicitation[]): void {
+    this.data = data;
+  }
+
+  private onFilterClear(): void {
+    this.refresh();
   }
 }

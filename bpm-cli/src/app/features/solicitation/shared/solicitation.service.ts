@@ -52,7 +52,6 @@ export class SolicitationService {
 @Injectable({
     providedIn: 'root'
 })
-@Injectable()
 export class SolicitationResolveService implements Resolve<Solicitation> {
 
     constructor(private service: SolicitationService) { }
@@ -62,10 +61,10 @@ export class SolicitationResolveService implements Resolve<Solicitation> {
         const solicitationId = Number(route.params['SolicitationId']);
 
         return this.service.get(solicitationId).pipe(catchError(error => {
-            return EMPTY
+            return EMPTY;
         }), mergeMap(solicitation => {
             if (solicitation) {
-                return of(solicitation)
+                return of(solicitation);
             } else {
                 return EMPTY;
             }

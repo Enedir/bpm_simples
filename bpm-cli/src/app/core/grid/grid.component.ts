@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { GridOption } from './shared/grid.model';
+import { IGridOption } from './shared/grid.model';
 
 @Component({
   selector: 'bpm-grid',
@@ -8,7 +8,7 @@ import { GridOption } from './shared/grid.model';
 })
 export class GridComponent {
 
-  @Input() options: GridOption[];
+  @Input() options: IGridOption[];
   @Input() dataReader: any[];
 
   @Output() selectEvent = new EventEmitter();

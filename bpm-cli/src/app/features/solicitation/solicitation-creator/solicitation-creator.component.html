@@ -1,41 +1,46 @@
 <section class="container">
-    <h1 class="brand">Criar uma Solicitação</h1>
-    <div class="wrapper">
-      <div class="solicitation">
-        <form [formGroup]="formModel">
-          <p>
-            <label for="nameApplicant">Nome do solicitante</label>
-            <input formControlName="nameApplicant" type="text" id="nameApplicant" placeholder="Digite o nome do solicitante">
-            <small *ngIf="formModel.get('nameApplicant').touched">
-                <small  *ngIf="formModel.get('nameApplicant').hasError('required')">
-                    Campo obrigatório
-                </small>
+  <h1 class="brand">Criar uma Solicitação</h1>
+  <div class="wrapper">
+    <div class="solicitation">
+      <form [formGroup]="formModel">
+        <p>
+          <label for="nameApplicant">Nome do solicitante</label>
+          <input formControlName="nameApplicant" type="text" id="nameApplicant"
+            placeholder="Digite o nome do solicitante">
+          <small *ngIf="formModel.get('nameApplicant').touched">
+            <small *ngIf="formModel.get('nameApplicant').hasError('required')">
+              Campo obrigatório
             </small>
-          </p>
-          <p>
-            <label for="itemDescription">Descrição do Item</label>
-            <input formControlName="itemDescription" type="text" id="itemDescription" placeholder="Digite o descrição do item">
-            <small *ngIf="formModel.get('itemDescription').touched">
-                <small  *ngIf="formModel.get('itemDescription').hasError('required')">
-                    Campo obrigatório
-                </small>
+          </small>
+        </p>
+        <p>
+          <label for="itemDescription">Descrição do Item</label>
+          <input formControlName="itemDescription" type="text" id="itemDescription"
+            placeholder="Digite o descrição do item">
+          <small *ngIf="formModel.get('itemDescription').touched">
+            <small *ngIf="formModel.get('itemDescription').hasError('required')">
+              Campo obrigatório
             </small>
-          </p>
-          <p>
-              <label for="productValue">Descrição do Item</label>
-              <input formControlName="productValue" type="number"  id="productValue" placeholder="Digite o valor do produto">
-              <small *ngIf="formModel.get('productValue').touched">
-                  <small  *ngIf="formModel.get('productValue').hasError('required')">
-                      Campo obrigatório
-                  </small>
-              </small>
-          </p>
-          <p>
+          </small>
+        </p>
+        <p>
+          <label for="productValue">Descrição do Item</label>
+          <input formControlName="productValue" type="text" id="productValue" placeholder="Digite o valor do produto" currencyMask  [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+          <small *ngIf="formModel.get('productValue').touched">
+            <small *ngIf="formModel.get('productValue').hasError('required')">
+              Campo obrigatório
+            </small>
+          </small>
+        </p>
+        <p>
 
-          </p>
-          <button (click)="onCreate()" [disabled]="formModel.invalid">Salvar</button>
-          <button (click)="redirect()">Cancelar</button>
-        </form>
-      </div>
+        </p>
+        <button (click)="onCreate()" [disabled]="formModel.invalid">Salvar</button>
+        <button (click)="redirect()">Cancelar</button>
+      </form>
     </div>
-  </section>
+  </div>
+
+  <ngx-spinner></ngx-spinner>
+
+</section>

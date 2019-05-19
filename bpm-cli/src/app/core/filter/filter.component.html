@@ -1,0 +1,17 @@
+<div>
+
+  <div>
+    <select [(ngModel)]="key" (change)="onChange($event)">
+      <option></option>
+      <option *ngFor="let option of options" [value]="option.key">{{ option.text }}</option>
+    </select>
+  </div>
+
+  <div>
+    <input type="text" [(ngModel)]="value" [disabled]="currentFilter.hasValue">
+  </div>
+
+  <button (click)="onFilter()">Filtrar</button>
+  <button (click)="onClear()">Limpar</button>
+
+</div>
