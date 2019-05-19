@@ -1,106 +1,131 @@
-.container{
-  max-width:900px;
-  margin-left:auto;
-  margin-right:auto;
-  padding:1em;
+.container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
 }
 
-ul{
-  list-style: none;
-  padding:0;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.brand{
-  text-align: center;
+.brand {
+    text-align: center;
 }
 
-.brand span{
-  color:#fff;
+.brand span {
+    color: #fff;
 }
 
-.wrapper{
-  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
 
-.wrapper > *{
-  padding: 1em;
+.wrapper>* {
+    padding: 1em;
 }
 
-.solicitation-info{
-  background:#c9e6ff;
+.solicitation-info {
+    background: #c9e6ff;
 }
 
-.solicitation-info h3, .solicitation-info ul{
-  text-align: center;
-  margin:0 0 1rem 0;
+.solicitation-info h3,
+.solicitation-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
 }
 
-.solicitation{
-  background:#f9feff;
+.solicitation {
+    background: #f9feff;
 }
 
 /* FORM STYLES */
-.solicitation form{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:20px;
+.solicitation form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
-.solicitation form label{
-  display:block;
+.solicitation form label {
+    display: block;
 }
 
-.solicitation form small{
-  display:block;
-  color: red;
+.solicitation form small {
+    display: block;
+    color: red;
 }
 
-.solicitation form p{
-  margin:0;
+.solicitation form p {
+    margin: 0;
 }
 
-.solicitation form .full{
-  grid-column: 1 / 3;
+.solicitation form .full {
+    grid-column: 1 / 3;
 }
 
-.solicitation form button, .solicitation form input, .solicitation form textarea{
-  width:100%;
-  padding:0.5em;
-  border:1px solid #c9e6ff;
+.solicitation form button,
+.solicitation form input,
+.solicitation form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #c9e6ff;
 }
 
-.solicitation form button{
-  background:#c9e6ff;
-  border:0;
-  text-transform: uppercase;
+.solicitation form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
 }
 
-.solicitation form button:hover,.solicitation form button:focus{
-  background:#92bde7;
-  color:#fff;
-  outline:0;
-  transition: background-color 2s ease-out;
+.solicitation form button:hover,
+.solicitation form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
 }
 
-.solicitation form button:disabled{
-  background:#9ea2a5;
-  color:#fff;
-  outline:0;
-  transition: background-color 2s ease-out;
+.solicitation form button:disabled {
+    background: #9ea2a5;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+
+/* LARGE SCREENS */
+@media(min-width:320px) {
+  .solicitation form {
+    display: unset;
+    input{
+     margin-bottom: 5px;
+    }
+
+    button{
+      margin-bottom: 5px;
+    }
+  }
 }
 
 /* LARGE SCREENS */
-@media(min-width:700px){
-  .wrapper{
+@media(min-width:768px) {
+  .solicitation form {
     display: grid;
-    //grid-template-columns: 1fr 2fr;
-  }
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 
-  .wrapper > *{
-    padding:2em;
-  }
+    input{
+      margin-bottom: 2px;
+     }
 
-  .solicitation-info h3, .solicitation-info ul, .brand{
-    text-align: left;
+     button{
+       margin-bottom: 2px;
+     }
   }
+    .solicitation-info h3,
+    .solicitation-info ul,
+    .brand {
+        text-align: left;
+    }
 }

@@ -1,5 +1,5 @@
 <section class="container">
-  <div>
+  <div class="container__filter">
     <bpm-filter  [options]="filterOptions" [dataReader]="data" (filterSearchEvent)="onFilterSearch($event)" (filterClearEvent)="onFilterClear()"></bpm-filter>
   </div>
   <div class="container__button">
@@ -8,5 +8,5 @@
     <button class="button button__delete" type="button" (click)="onDelete()">Deletar</button>
   </div>
 
-  <bpm-grid [options]="gridOptions" [dataReader]="data" (selectEvent)="onItemSelect($event)"></bpm-grid>
+  <bpm-grid class="container__grid" [options]="gridOptions" [dataReader]="data" (selectEvent)="onItemSelect($event)"></bpm-grid>
 </section>

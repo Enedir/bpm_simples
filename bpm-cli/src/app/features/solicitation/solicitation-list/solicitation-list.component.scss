@@ -1,35 +1,122 @@
 .container {
-  height: 100%;
-  width: 100%;
-  margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
 
-  &__button{
-    width: 76%;
-    display: flex;
-    justify-content: flex-end;
-  }
+    &__button {
+        width: 76%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__filter {
+        width: 76%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__grid {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
 }
 
 .button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-right: 5px;
-  margin-left: 5px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    //display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
 
-  &__solicitation{
-    background-color: #4CAF50; /* Green */
-  }
+    &__solicitation {
+        background-color: #4CAF50;
+        /* Green */
+    }
 
-  &__approve{
-    background-color: #008CBA; /* Blue  */
-  }
+    &__approve {
+        background-color: #008CBA;
+        /* Blue  */
+    }
 
-  &__delete{
-    background-color: #f44336; /* Red */
+    &__delete {
+        background-color: #f44336;
+        /* Red */
+    }
+
+}
+
+/* LARGE SCREENS */
+@media(min-width:320px) {
+
+    .container__filter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container__button {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .button {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        width: 100%;
+    }
+
+    @media(min-width:768px) {
+
+        .container__filter {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .container__button {
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .container__filter {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+}
+
+
+@media(min-width:1280px) {
+  .container__button {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 100%;
+
+      .button{
+        width: 17.9%;
+      }
   }
 }
