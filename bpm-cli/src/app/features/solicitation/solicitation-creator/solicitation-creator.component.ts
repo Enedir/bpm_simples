@@ -47,10 +47,12 @@ export class SolicitationCreatorComponent {
       }, (err: HttpErrorResponse) => {
         if (err.error instanceof Error) {
           // A client-side or network error occurred.
+          this.spinner.hide();
           alert('Aconteceu um erro:' + err.error.message);
         } else {
           // Backend returns unsuccessful response codes such as 404, 500 etc.
           alert('Aconteceu um erro: status ->  ' +  err.status + 'mensagem de erro -> ' + err.error);
+          this.spinner.hide();
           // Log errors if any
         }
       });

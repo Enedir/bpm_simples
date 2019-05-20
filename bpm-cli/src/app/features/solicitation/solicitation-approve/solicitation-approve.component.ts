@@ -50,10 +50,12 @@ export class SolicitationApproveComponent implements OnInit {
       if (err.error instanceof Error) {
         // A client-side or network error occurred.
         alert('Aconteceu um erro:' + err.error.message);
+        this.spinner.hide();
       } else {
         // Backend returns unsuccessful response codes such as 404, 500 etc.
         alert('Aconteceu um erro: status ->  ' +  err.status + 'mensagem de erro -> ' + err.error);
         // Log errors if any
+        this.spinner.hide();
       }
     });
   }
@@ -75,11 +77,12 @@ export class SolicitationApproveComponent implements OnInit {
       }, (err: HttpErrorResponse) => {
         if (err.error instanceof Error) {
           // A client-side or network error occurred.
-          console.log('An error occurred:', err.error.message);
+          this.spinner.hide();
+          alert('Aconteceu um erro:' + err.error.message);
         } else {
           // Backend returns unsuccessful response codes such as 404, 500 etc.
-          console.log('Backend returned status code: ', err.status);
-          console.log('Response body:', err.error);
+          alert('Aconteceu um erro: status ->  ' +  err.status + 'mensagem de erro -> ' + err.error);
+          this.spinner.hide();
           // Log errors if any
         }
       });
