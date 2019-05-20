@@ -38,7 +38,7 @@ Execute esse comando na pasta bpm-cli, para poder executar o servidor interno no
 ng serve 
 ```
 
-* Passo 5
+* Passo 6
 Verifique a porta que o servidor a aplicação Spring Boot 2 esta rodando, e troque a url no arquivo environment, se o caminho ou a porta for mudada no projeto bpm-cli.
 ```
 export const environment = {
