@@ -4,7 +4,7 @@
     margin-top: 10px;
 
     &__button {
-        width: 76%;
+        width: 100%;
         display: flex;
         justify-content: flex-end;
     }
@@ -95,28 +95,40 @@
             align-items: center;
             padding-left: 15px;
             padding-right: 15px;
+
+            .button {
+                width: 100%;
+            }
         }
     }
 }
 
 @media(min-width:1024px) {
     .container__filter {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-end;
         width: 100%;
+
+    }
+
+    .container__button {
+      align-items: flex-end;
+        .button {
+            width: 26%;
+        }
     }
 }
 
 
 @media(min-width:1280px) {
-  .container__button {
-      flex-direction: row;
-      align-items: flex-end;
-      justify-content: flex-end;
-      width: 100%;
+    .container__button {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
 
-      .button{
-        width: 17.9%;
-      }
-  }
+        .button {
+            width: 100%;
+        }
+    }
 }

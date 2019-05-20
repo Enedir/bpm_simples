@@ -5,7 +5,7 @@ export function SolicitationValidator(control: AbstractControl): ValidationError
     const status = control.get('isApproved').value;
     const observation = control.get('observation').value;
 
-    return (status === 'REPROVED' && observation === '') ? { observationEmpty: true } : null;
+    return (status === 'REPROVADO' && observation === '') ? { observationEmpty: true } : null;
 
 }
 

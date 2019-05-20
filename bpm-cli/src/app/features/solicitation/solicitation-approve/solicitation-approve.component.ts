@@ -35,11 +35,11 @@ export class SolicitationApproveComponent implements OnInit {
   public itens = [
     {
       name: 'Aprovado',
-      value: 'APPROVED'
+      value: 'APROVADO'
     },
     {
       name: 'Reprovado',
-      value: 'REPROVED'
+      value: 'REPROVADO'
     }
   ];
 
@@ -49,11 +49,10 @@ export class SolicitationApproveComponent implements OnInit {
     }, (err: HttpErrorResponse) => {
       if (err.error instanceof Error) {
         // A client-side or network error occurred.
-        console.log('An error occurred:', err.error.message);
+        alert('Aconteceu um erro:' + err.error.message);
       } else {
         // Backend returns unsuccessful response codes such as 404, 500 etc.
-        console.log('Backend returned status code: ', err.status);
-        console.log('Response body:', err.error);
+        alert('Aconteceu um erro: status ->  ' +  err.status + 'mensagem de erro -> ' + err.error);
         // Log errors if any
       }
     });
@@ -72,7 +71,7 @@ export class SolicitationApproveComponent implements OnInit {
         setTimeout(() => {
           this.spinner.hide();
           this.redirect();
-      }, 500);
+      }, 200);
       }, (err: HttpErrorResponse) => {
         if (err.error instanceof Error) {
           // A client-side or network error occurred.

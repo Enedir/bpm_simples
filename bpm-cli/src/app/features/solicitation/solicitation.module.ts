@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -10,6 +10,10 @@ import { SolicitationService, SolicitationResolveService } from './shared/solici
 import { SolicitationListComponent } from './solicitation-list/solicitation-list.component';
 import { SolicitationApproveComponent } from './solicitation-approve/solicitation-approve.component';
 import { SolicitationCreatorComponent } from './solicitation-creator/solicitation-creator.component';
+
+import ptBr from '@angular/common/locales/pt'; // necessário a partir do Angular v5
+import { registerLocaleData } from '@angular/common'; // necessário a partir do Angular v5
+registerLocaleData(ptBr); // necessário a partir do Angular v5
 
 @NgModule({
   imports: [
@@ -23,6 +27,7 @@ import { SolicitationCreatorComponent } from './solicitation-creator/solicitatio
   providers: [
     SolicitationService,
     SolicitationResolveService,
+    { provide: LOCALE_ID, useValue: 'pt' } // necessário a partir do Angular v5 pt-BR nao é mais suportado
   ]
 })
 export class SolicitationModule { }

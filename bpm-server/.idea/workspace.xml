@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb63a5c8-8ff1-4a61-ad6f-5216853d86b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-cli/src/app/core/grid/grid.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-cli/src/app/core/grid/grid.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-cli/src/app/core/grid/grid.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-cli/src/app/core/grid/grid.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-cli/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-cli/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-cli/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-cli/src/app/features/solicitation/solicitation-approve/solicitation-approve.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-cli/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-cli/src/app/features/solicitation/solicitation-creator/solicitation-creator.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bpm-cli/src/app/features/solicitation/solicitation.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../bpm-cli/src/app/features/solicitation/solicitation.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/DbSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/DbSeeder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,7 +29,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/DbSeeder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,7 +90,6 @@
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/MovimentController.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/moviment/Moviment.java" />
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandRegister.java" />
-        <option value="$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/DbSeeder.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/ModeMapConfig.java" />
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandDelete.java" />
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandUpdate.java" />
@@ -79,7 +99,6 @@
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/model/SolicitationModelView.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/BmpServerApplication.java" />
-        <option value="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/CORSFilter.java" />
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/commands/SolicitationCommandApprove.java" />
         <option value="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SocilitationApproveException.java" />
@@ -88,6 +107,8 @@
         <option value="$PROJECT_DIR$/application/src/main/java/br/com/bpm/application/features/solicitation/SolicitationService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/br/com/bpm/web/controllers/SolicitationController.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java" />
+        <option value="$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/DbSeeder.java" />
       </list>
     </option>
   </component>
@@ -98,7 +119,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1358" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -112,7 +133,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bpm-server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="orm" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="bpm-server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="orm" type="616d4139:PackageViewModuleNode" />
+              <item name="br.com.bpm.persistence" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -191,12 +227,12 @@
       <workItem from="1557872370216" duration="7200000" />
       <workItem from="1557962843125" duration="2172000" />
       <workItem from="1558063064693" duration="5511000" />
-      <workItem from="1558272739484" duration="1792000" />
+      <workItem from="1558272739484" duration="3024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80892000" />
+    <option name="totallyTimeSpent" value="82124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -208,7 +244,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12739871" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -378,16 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/DbSeeder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="34" column="41" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/src/main/java/br/com/bpm/infrastructure/MapperUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
@@ -484,25 +511,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class" />
-    <entry file="file://$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/function/Supplier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -545,6 +555,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/Solicitation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/br/com/bpm/domain/features/solicitation/SolicitationApprovedEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence/src/main/java/br/com/bpm/persistence/DbSeeder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

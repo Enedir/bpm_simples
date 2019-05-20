@@ -9,7 +9,7 @@ export class Solicitation {
 
 export class SolicitationCommandRegister {
   constructor() {
-    this.isApproved = 'IN_WATERY';
+    this.isApproved = 'ESPERA';
   }
 
   public nameApplicant: string;
@@ -21,7 +21,7 @@ export class SolicitationCommandRegister {
 export class SolicitationCommandUpdate {
   constructor(id?: number) {
     this.id = id;
-    this.isApproved = 'IN_WATERY';
+    this.isApproved = 'ESPERA';
   }
 
   public id: number;

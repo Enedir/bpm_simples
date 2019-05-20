@@ -9,7 +9,7 @@
         <li><strong>Descrição do Item</strong></li>
         <li> {{solicitation.itemDescription}}</li>
         <li><strong>Valor do Produto</strong></li>
-        <li> {{solicitation.productValue}}</li>
+        <li> {{solicitation.productValue | currency:'BRL':true}}</li>
       </ul>
     </div>
     <div class="solicitation">

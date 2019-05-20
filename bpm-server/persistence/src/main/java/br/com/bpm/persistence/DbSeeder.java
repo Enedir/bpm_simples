@@ -23,9 +23,9 @@ public class DbSeeder implements CommandLineRunner {
 
         Solicitation solicitation1 = new Solicitation("Gilmar","Pilha", 23.65);
         Solicitation solicitation2 = new Solicitation("Aline","Monitor", 923.15);
-        Solicitation solicitation3 = new Solicitation("Paula","Folha A4", 13.60);
-        Solicitation solicitation4 = new Solicitation("Mauro","SSD", 332.45, SolicitationApprovedEnum.APPROVED, "");
-        Solicitation solicitation5 = new Solicitation("Alex","MAC - PRO", 20000.20, SolicitationApprovedEnum.REPROVED, "Teste");
+        Solicitation solicitation3 = new Solicitation("Paula","Folha A4", 13.61);
+        Solicitation solicitation4 = new Solicitation("Mauro","SSD", 332.45, SolicitationApprovedEnum.APROVADO, "");
+        Solicitation solicitation5 = new Solicitation("Alex","MAC - PRO", 20000.22, SolicitationApprovedEnum.REPROVADO, "Teste");
 
         List<Solicitation> solicitations = new ArrayList<>();
         solicitations.add(solicitation1);

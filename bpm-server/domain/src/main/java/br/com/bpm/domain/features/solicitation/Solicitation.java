@@ -29,14 +29,14 @@ public class Solicitation {
     private String observation;
 
     public Solicitation() {
-        this.isApproved = SolicitationApprovedEnum.IN_WATERY;
+        this.isApproved = SolicitationApprovedEnum.ESPERA;
     }
 
     public Solicitation(String nameApplicant, String itemDescription, double productValue) {
         this.nameApplicant = nameApplicant;
         this.itemDescription = itemDescription;
         this.productValue = productValue;
-        this.isApproved = SolicitationApprovedEnum.IN_WATERY;
+        this.isApproved = SolicitationApprovedEnum.ESPERA;
     }
 
     public Solicitation(String nameApplicant, String itemDescription, double productValue, SolicitationApprovedEnum isApproved, String observation) {
@@ -97,7 +97,7 @@ public class Solicitation {
 
     public void approveValidate() throws SocilitationApproveException {
 
-        if(isApproved == SolicitationApprovedEnum.REPROVED && observation.isEmpty())
+        if(isApproved == SolicitationApprovedEnum.REPROVADO && observation.isEmpty())
             throw new SocilitationApproveException();
     }
 }
